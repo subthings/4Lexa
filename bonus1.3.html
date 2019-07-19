@@ -1,0 +1,47 @@
+<html>
+<head>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 2fr;
+            align-items: end;
+
+        }
+
+        .item {
+            border: 2px solid #310062;
+            height: 100%;
+            color: #c8a2c8;
+        }
+
+        .“innerGrid” {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: end;
+            width: 50%;
+        }
+        .centerItem {
+            display: grid;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="item centerItem">1</div>
+    <div class="item centerItem">2</div>
+    <div class="item">
+        <span>3</span>
+        <div class=“innerGrid”>
+            <span class="item">a</span>
+            <span class="item">b</span>
+            <span class="item">c</span>
+            <span class="item">d</span>
+    </div>
+    </div>
+    <span class="item">4</span>
+    <span class="item">5</span>
+    <span class="item">6</span>
+</div>
+</body>
+</html>
