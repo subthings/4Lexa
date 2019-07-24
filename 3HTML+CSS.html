@@ -2,9 +2,157 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .container {
+            padding: 20px;
+        }
+
+        .containerItem {
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .firstBlock {
+            border-bottom: 2px solid grey;
+        }
+
+        .secondBlockHeader {
+            margin-bottom: 15px;
+        }
+
+        .image {
+            content: url("images/second_1.jpg");
+            width: 100%;
+            height: 30%;
+        }
+
+        .greetings-text {
+            position: absolute;
+            background-color: #ff5b8d;
+            bottom: 500px;
+            width: 100px;
+            height: 100px;
+        }
+
+        .secondBlockContent {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 15px;
+        }
+
+
+        .thirdBlock {
+            background-color: #0000cc;
+            padding: 10px;
+        }
+
+        .photos {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        .image_wrapper {
+            width: 95%;
+            margin: 15px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #1a1a1a;
+        }
+
+
+
+    </style>
 </head>
 <body>
-$END$
+<div class="container">
+    <div class="containerItem firstBlock">
+        <div class="header">
+            <img src="images/LOGO.jpg" alt="" width="60px" height="60px">
+            <input type="text" placeholder="Найти"/>
+        </div>
+
+        <div>
+            <a href="#">Полезное</a>
+            <a href="#">Загрузки</a>
+            <a href="#">Контакы</a>
+            <a href="#">Работа</a>
+        </div>
+    </div>
+
+    <div class="containerItem secondBlock" style="background-color: #f0f0f0">
+        <div class="secondBlockHeader">
+            <div class="image"></div>
+            <p class="greetings-text">Some greetings</p>
+        </div>
+        <div class="secondBlockContent">
+            <div>
+                <img src="images/secondContent_1.jpg" style="width: 100%">
+                <p>Направление 1</p>
+                <p style="background-color: #cccccc">Текст</p>
+            </div>
+            <div>
+                <img src="images/secondContent_2.jpg" style="width: 100%">
+                <p>Направление 2</p>
+                <p style="background-color: #cccccc">Текст</p>
+            </div>
+            <div>
+                <img src="images/secondContent_3.jpg" style="width: 100%">
+                <p>Направление 3</p>
+                <p style="background-color: #cccccc">Текст</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="containerItem thirdBlock">
+        <p style="color: #fff">Заголовок секции</p>
+        <div style="display: flex; justify-content: space-between;">
+            <p style="background-color: white; padding: 15px;">ТекстТекстТекстТекстТекстТекстТекст</p>
+            <img src="images/third.jpg" alt="Cake">
+        </div>
+    </div>
+
+    <div class="containerItem fourthBlock">
+        <p>Лучшие фотографии</p>
+        <div class="photos">
+            <div class="image_wrapper">
+            <img src="images/fourth_1.jpg" alt="Wedding cake" height="100%" width="100%">
+            </div>
+            <div class="image_wrapper">
+            <img src="images/fourth_2.jpg" alt="Wedding bar" height="100%" width="100%">
+            </div>
+            <div class="image_wrapper">
+                <img src="images/fourth_3.jpg" alt="" height="100%" width="100%">
+            </div>
+            <div class="image_wrapper">
+                <img src="images/fourth_4.jpg" alt="" height="100%" width="100%">
+            </div>
+
+            <div class="image_wrapper">
+                <img src="images/fourth_5.jpg" alt="" height="100%" width="100%">
+            </div>
+            <div class="image_wrapper">
+                <img src="images/fourth_6.jpg" alt="" height="100%" width="100%">
+            </div>
+        </div>
+    </div>
+    <div class="containerItem"></div>
+</div>
+<div class="containerItem fourthBlock" style="background-color: #ff339a">
+    <p style="color: #fff; padding:15px">Заголовок секции</p>
+    <div style="display: flex; justify-content: space-between;">
+        <p style="width: 150px; height: 100px; background-color: white; padding: 15px; margin-left: 15px">Список ссылок</p>
+        <p style="width: 150px; height: 100px; background-color: white; padding: 15px;">Список ссылок</p>
+        <p style="width: 150px; height: 100px; background-color: white; padding: 15px;">Список ссылок</p>
+        <p style="width: 150px; height: 100px; background-color: white; padding: 15px; margin-right: 15px">Список ссылок</p>
+    </div>
+</div>
 </body>
 </html>
