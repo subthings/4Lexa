@@ -10,9 +10,6 @@
             padding: 20px;
         }
 
-        .containerItem {
-        }
-
         .header {
             display: flex;
             justify-content: space-between;
@@ -127,9 +124,11 @@
 
     <div class="containerItem thirdBlock">
         <p style="color: #fff">Заголовок секции</p>
-        <div style="display: flex; justify-content: space-between;">
+        <div style="display: grid; grid-template-columns: repeat(2, 1fr); grid-gap: 30px;">
             <p style="background-color: white; padding: 15px;">ТекстТекстТекстТекстТекстТекстТекст</p>
+            <div>
             <img src="images/third.jpg" alt="Cake" style="width: 50%">
+            </div>
         </div>
     </div>
 
@@ -138,22 +137,27 @@
         <div class="photos">
             <div class="image_wrapper">
                 <img src="images/fourth_1.jpg" alt="Wedding cake" height="100%" width="100%">
+                <p style="text-align: center">Свадебный торт</p>
             </div>
             <div class="image_wrapper">
                 <img src="images/fourth_2.jpg" alt="Wedding bar" height="100%" width="100%">
+                <p style="text-align: center">Капкейк бар</p>
             </div>
             <div class="image_wrapper">
                 <img src="images/fourth_3.jpg" alt="" height="100%" width="100%">
+                <p style="text-align: center">В подарок</p>
             </div>
             <div class="image_wrapper">
                 <img src="images/fourth_4.jpg" alt="" height="100%" width="100%">
+                <p style="text-align: center">Капкейк в подарок</p>
             </div>
-
             <div class="image_wrapper">
                 <img src="images/fourth_5.jpg" alt="" height="100%" width="100%">
+                <p style="text-align: center">На день рождения</p>
             </div>
             <div class="image_wrapper">
                 <img src="images/fourth_6.jpg" alt="" height="100%" width="100%">
+                <p style="text-align: center">Просто так</p>
             </div>
         </div>
     </div>
